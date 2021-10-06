@@ -52,6 +52,7 @@ public class LevelTileUI : MonoBehaviour, IPointerClickHandler, IEventSystemHand
 			Level level = value.Level;
 			txt.text = level.no.ToString();
 			_fillImg.color = _fillImg.color.WithAlpha((!value.Locked) ? 1 : 0);
+			txt.gameObject.SetActive(!value.Locked);
 			_completeMark.SetActive(value.Completed);
 			_lockMark.SetActive(value.Locked);
 			_mViewModel = value;

@@ -411,7 +411,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 880680e798514962907a4162aa4108e7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 106dd1d59804ba64f8fa37ac3d63ee2c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -595,6 +595,7 @@ MonoBehaviour:
   _liquidLine: {fileID: 1790611146176730784}
   _audio: {fileID: 1790611143995692699}
   _liquidTransferClip: {fileID: 8300000, guid: aa14d9fcdf5248e898229cb0467066ec, type: 3}
+  isThisHolderFull: 0
 --- !u!61 &1790611143643371162
 BoxCollider2D:
   m_ObjectHideFlags: 0
