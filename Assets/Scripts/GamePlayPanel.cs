@@ -1,15 +1,16 @@
 using Game;
 using MyGame;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class GamePlayPanel : ShowHidable
 {
-    [SerializeField] private Text _lvlTxt;
+    [SerializeField] private TextMeshProUGUI _lvlTxt;
 
     private void Start()
     {
-        _lvlTxt.text = $"Level {LevelManager.Instance.Level.no}";
+        _lvlTxt.text = $"LEVEL {LevelManager.Instance.Level.no}";
     }
 
     public void OnClickUndo()
@@ -43,14 +44,14 @@ public class GamePlayPanel : ShowHidable
 
     public void OnClickMenu()
     {
-        SharedUIManager.PopUpPanel.ShowAsConfirmation("Exit?", "Are you sure want to exit the game?",
+        /*SharedUIManager.PopUpPanel.ShowAsConfirmation("Exit?", "Are you sure want to exit the game?",
             delegate(bool success)
             {
                 if (success)
                 {
                     GameManager.LoadScene("MainMenu");
                 }
-            });
+            });*/
     }
 
     private void Update()
