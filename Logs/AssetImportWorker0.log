@@ -1058,3 +1058,4 @@ Received Import Request.
 Start importing Assets/'ui/Untitled-1.png using Guid(25c4e85d543ca8243af9b70d567f0fed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '245b389a9285f13e0cf92d414b3c5b07') in 0.045050 seconds 
   Import took 0.048510 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
