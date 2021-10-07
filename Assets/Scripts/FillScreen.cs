@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UIElements;
 
 [RequireComponent(typeof(SpriteRenderer))]
 public class FillScreen : MonoBehaviour
@@ -9,12 +10,19 @@ public class FillScreen : MonoBehaviour
 
     public Sprite[] bgs;
 
+    public Image[] bgs2;
+
+    public GameObject backpanel;
+
     private void Awake()
     {
         _renderer = GetComponent<SpriteRenderer>();
         if (bgs.Length != 0)
         {
-            _renderer.sprite = bgs[Random.Range(0, bgs.Length)];
+            int okk =Random.Range(0, bgs.Length);
+            _renderer.sprite = bgs[okk];
+           // backpanel.GetComponent<Image>().sprite= bgs[Random.Range(0, bgs.Length)];
+           backpanel.GetComponent<UnityEngine.UI.Image>().sprite=bgs[okk];
         }
 
         _camera = Camera.main;

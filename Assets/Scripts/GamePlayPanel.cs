@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class GamePlayPanel : ShowHidable
 {
     [SerializeField] private TextMeshProUGUI _lvlTxt;
+    public GameObject exitpanel;
 
     private void Start()
     {
@@ -52,6 +53,17 @@ public class GamePlayPanel : ShowHidable
                     GameManager.LoadScene("MainMenu");
                 }
             });*/
+        exitpanel.SetActive(true);
+    }
+
+    public void no()
+    {
+        exitpanel.SetActive(false);
+    }
+
+    public void Exit()
+    {
+        GameManager.LoadScene("MainMenu");
     }
 
     private void Update()
