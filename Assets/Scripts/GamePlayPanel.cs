@@ -35,11 +35,10 @@ public class GamePlayPanel : ShowHidable
         // }
         // else
         // {
-        SharedUIManager.PopUpPanel.ShowAsConfirmation("Skip", "Watch Video to skip this level", delegate(bool success)
-        {
+       
             ResourceManager.CompleteLevel(LevelManager.Instance.GameMode, LevelManager.Instance.Level.no);
             UIManager.Instance.LoadNextLevel();
-        });
+        
         // }
     }
 
