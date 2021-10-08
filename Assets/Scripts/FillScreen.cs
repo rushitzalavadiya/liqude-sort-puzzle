@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UIElements;
 
+
 [RequireComponent(typeof(SpriteRenderer))]
 public class FillScreen : MonoBehaviour
 {
@@ -9,8 +10,6 @@ public class FillScreen : MonoBehaviour
     private Camera _camera;
 
     public Sprite[] bgs;
-
-    public Image[] bgs2;
 
     public GameObject backpanel;
 
@@ -21,8 +20,7 @@ public class FillScreen : MonoBehaviour
         {
             int okk =Random.Range(0, bgs.Length);
             _renderer.sprite = bgs[okk];
-           // backpanel.GetComponent<Image>().sprite= bgs[Random.Range(0, bgs.Length)];
-           backpanel.GetComponent<UnityEngine.UI.Image>().sprite=bgs[okk];
+            backpanel.GetComponent<UnityEngine.UI.Image>().sprite=bgs[okk];
         }
 
         _camera = Camera.main;

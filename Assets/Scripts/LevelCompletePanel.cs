@@ -14,8 +14,8 @@ public class LevelCompletePanel : ShowHidable
 	protected override void OnShowCompleted()
 	{
 		base.OnShowCompleted();
-		_toastTxt.text = _toasts.GetRandom();
-		_toastTxt.gameObject.SetActive(value: true);
+		//_toastTxt.text = _toasts.GetRandom();
+//		_toastTxt.gameObject.SetActive(value: true);
 	//	AdsManager.ShowOrPassAdsIfCan();
 	}
 

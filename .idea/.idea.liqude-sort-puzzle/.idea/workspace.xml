@@ -10,9 +10,6 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/animationScipat.cs" root0="FORCE_HIGHLIGHTING" />
-  </component>
   <component name="ProjectId" id="1z8KstvG20QOgjDMVJnaK7WlEqO" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
